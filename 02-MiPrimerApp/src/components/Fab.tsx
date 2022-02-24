@@ -23,9 +23,7 @@ export const Fab = ({title, onPress, position = 'br'}: Props) => {
           styles.fabLocation,
           position === 'bl' ? styles.left : styles.right,
         ]}>
-        <TouchableOpacity
-          onPress={onPress}
-          background={TouchableNativeFeedback.Ripple('black', false, 30)}>
+        <TouchableOpacity onPress={onPress}>
           <View style={styles.fab}>
             <Text style={styles.fabText}>{title}</Text>
           </View>
